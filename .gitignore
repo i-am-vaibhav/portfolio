@@ -1,0 +1,37 @@
+# Node modules (if you use Node or npm)
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Build / dist folders
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+
+# Compiled CSS (if using Sass/Less)
+*.css.map
+
+# Environment files
+.env
+
+# EmailJS or other API keys (if stored locally)
+.env.local
+.env.*.local
