@@ -1457,3 +1457,44 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/* Portfolio item container */
+.portfolio .portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  will-change: transform;
+}
+
+/* Always show info block */
+.portfolio .portfolio-item .portfolio-info {
+  position: relative;
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  background: color-mix(in srgb, var(--background-color), transparent 10%);
+  padding: 15px;
+}
+
+/* Headings and text inside */
+.portfolio .portfolio-item .portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.portfolio .portfolio-item .portfolio-info ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* Hover zoom + lift-up */
+.portfolio .portfolio-item:hover {
+  transform: scale(1.05) translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+}
